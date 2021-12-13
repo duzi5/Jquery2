@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+
+<>
+
+
+<p>nome:</p>
+<input id="nome" type="text">
+
+<p>Onde vc nos encontrou?</p>
+<select name="" id="origem">
+    <option value="1">Google</option>
+    <option value="2">Facebook</option>
+    <option value="3">Twitter</option>
+    <option value="4">TV</option>
+</select>
+
+<p>Sexo:</p>
+<input type="radio" name="sexo" class="sexo" value="f"> Feminino <br>
+<input type="radio" name="sexo" class="sexo" value="m"> Masculino 
+
+<!-- 
+    
+    Para saber do lado do backend como recuperar valores de um input do type radio
+    é necessário saber sobre as ordens e mecanismos de um evento. Essa parte do conteúdo 
+    ainda está sendo estudada, por enquanto, para que fique registrado e eu treine corretamente
+    vou digitar aqui o que poderia ser feito no console.log da página em questão 
+
+    $('.sexo') 
+
+    Selecionando dessa maneira temos de retorno um array com os dois inputs radio
+
+    Até mesmo se selecionamos o atributo que necessitamos a resposta é um array 
+
+    $('.sexo:checked') 
+
+    Temos a seguinte resposta: 
+
+    [0:input.sexo] 
+
+
+    Para sabermos o valor precisariamos digitar:
+
+
+
+
+    $('.sexo:checked').val()
+
+-->
+
+<p>Interesse</p>
+
+<input type="checkbox" name="interesse" class="interesse" value="php" >PHP<br>
+<input type="checkbox" name="interesse" class="interesse" value="js" >Javascript<br>
+<input type="checkbox" name="interesse" class="interesse" value="angular" >angular<br>
+<input type="checkbox" name="interesse" class="interesse" value="node" >NodeJS<br>
+
+
+
+
+
+
+
+
+</body>
+    <!--  
+        
+        Valores que devem ser atribuidos no console.log
+    
+    -->
+<script>
+
+
+        $('#nome').val('Antonio Netto')
+
+        $('#origem').val('3')
+
+        
+
+</script>
+
+    <!-- 
+
+        Não é possível visualizar por aqui, porque ainda não estamos trabalhando
+        com eventos. Apenas no console, os valores podem ser vistos. 
+
+    -->   
+
+
+</html>
