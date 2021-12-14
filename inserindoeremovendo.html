@@ -12,14 +12,15 @@
     </script>
     <script>
         $(document).ready(()=>{
-
+                     //!-- MÉTODOS DE INSERÇÃO -->
             $('#pai').append('<h2> eu sou inserido como último filho </h2>')
             $('#pai').prepend('<h3> eu sou inserido como primeiro filho </h3>')
             $('#pai').after('<h4> eu sou inserido após meu elemento de referência no mesmo nível dele </h4>')
             $('#pai').before('<h5> eu sou inserido antes do meu elemento de referência no mesmo nível dele </h5>')
             
-        
-        
+                       //<!-- METODOS DE EXCLUSÃO -->
+            $('#pai').html('<p> Eu sou o texto que substituirá os dois elementos internos da div </p>')
+            $('#pai').remove
         
         })
 
