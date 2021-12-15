@@ -10,19 +10,49 @@
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
         crossorigin="anonymous">
     </script>
+    <script>
+      $(document).ready(()=>{
+        $('body').css('margin', '0').css('padding', '0')
+        $('.header').css('background-color', 'red').css('width', '400px').css('height', '50px').css('margin', '0')
+        
+
+
+      })
+      
+        
+    
+    
+    
+    </script>
+
+
+
 </head>
 <body>
-    <h1>Manipulando CSS</h1>
-
-    <h2>css()->adiciona propriedades de estilos</h2>
-
+    
+    <div class="header">
+        <h1>Manipulando CSS</h1>
+    </div>
    
+    <hr>
+    <ul>
+        <li id="css" > <p> <b> css() </b>   ->    adiciona propriedades de estilos </p></li>
+    </ul>
+    
+ <hr>
 
-    <h2>addClass()->adiciona classes</h2>
-    <h2> hasClass()->verifica se a classe existe no elemento</h2>
-    <h2>removeClass->remove classes()</h2>
 
-    <p>São duas formas de mudar o css de um elemento <br> A primeira é através do método css(), a outra é adicionando ou removendo uma classe</p>
+   <ul>
+       <li><p> <b> addClass() </b>   ->   adiciona classes</p></li>
+       <li><p> <b> hasClass() </b>  ->   verifica se a classe existe no elemento</p></li>
+       <li><p> <b> removeClass()</b> ->  remove classes </p></li>
+   </ul>
+
+  <hr>
+
+    <p>São duas formas de mudar o css de um elemento. <br> 
+    A primeira é através do método css(), a outra é <br>
+    adicionando ou removendo uma classe</p>
 
 
 
